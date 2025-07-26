@@ -5,6 +5,7 @@ import Toggle from './Toggle'
 import ColorPicker from './ColorPicker'
 import Timer from './Timer'
 import Theme from './Theme'
+import Quote from './Quote'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Toggle/>
       <ColorPicker/>
       <Timer/>
+      <Quote/>
       </>
     
   )
