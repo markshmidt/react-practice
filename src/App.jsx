@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import ToDoList from './ToDoList'
 import Toggle from './Toggle'
+import ColorPicker from './ColorPicker'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <ToDoList/>
       <Toggle/>
+      <ColorPicker/>
       </>
     
   )

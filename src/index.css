@@ -109,3 +109,35 @@ button:hover{
     text-align: left;
     font-size: 1.5rem;
     color: #333;}
+    .color-picker{
+      margin-left: 10px;
+      margin-top: 10px;;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .color-picker:hover{
+      border-color: #007bff;
+    }
+    .color-display{
+      width: 300px;
+      border-radius: 2%;
+      margin-right: 10px;
+      display:inline-block;
+      align-items: center;
+      justify-content: center;
+    }
+    .color-picker label{
+      cursor: pointer;
+      display: inline-block;
+     
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid transparent;
+    }
