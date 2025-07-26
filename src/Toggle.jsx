@@ -12,7 +12,8 @@ function Toggle() {
         <div className="toggle">
             <h1> Toggle part</h1>
             {visible && <p className="text">Text to hide/show. </p>}
-            <button className="toggleButton" onClick={toggleText}>Hide/Show</button>
+            {visible ?  <button className="toggleButton" onClick={toggleText}>Hide</button>: <button className="toggleButton" onClick={toggleText}>Show</button>}
+
         </div>
     )
 }

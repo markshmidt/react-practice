@@ -46,7 +46,7 @@ function Timer(){
         let minutes = Math.floor((elapsedTime % 3600000) / 60000);
         let seconds = Math.floor((elapsedTime % 60000) / 1000);
         let milliseconds = Math.floor((elapsedTime % 1000) / 10);
-        return `${hours}:${minutes}:${seconds}:${milliseconds}`; // Placeholder for formatted time
+        return `${hours}:${minutes}:${seconds}:${milliseconds}`; 
     }
     
     return(
