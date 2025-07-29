@@ -6,6 +6,8 @@ import ColorPicker from './ColorPicker'
 import Timer from './Timer'
 import Theme from './Theme'
 import Quote from './Quote'
+import CharacterCount from './CharacterCount'
+import Modal from './Modal'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <ColorPicker/>
       <Timer/>
       <Quote/>
+      <CharacterCount/>
+      <Modal/>
       </>
     
   )
