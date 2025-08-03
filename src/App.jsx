@@ -8,11 +8,13 @@ import Theme from './Theme'
 import Quote from './Quote'
 import CharacterCount from './CharacterCount'
 import Modal from './Modal'
+import ScrollButton from './ScrollButton'
 
 function App() {
 
   return (
     <>
+    <ScrollButton/>
     <Theme/>
       <ToDoList/>
       <Toggle/>

@@ -175,3 +175,12 @@ button:hover{
     .modalHidden{
       font-size: 1.5rem;
     }
+    .scrollbtn{
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      position:fixed;
+      
+
+    }
