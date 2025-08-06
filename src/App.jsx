@@ -9,6 +9,7 @@ import Quote from './Quote'
 import CharacterCount from './CharacterCount'
 import Modal from './Modal'
 import ScrollButton from './ScrollButton'
+import GitHubUserFetch from './GitHubUserFetch'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Quote/>
       <CharacterCount/>
       <Modal/>
+      <GitHubUserFetch/>
       </>
     
   )
