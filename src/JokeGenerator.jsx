@@ -1,12 +1,17 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 
 function JokeGenerator(){
 
     const [joke, setJoke] = useState('');
     const [punchline, setPunchline] = useState('');
     const[showPunchline, setShowPunchline] = useState(false)
+     const timerRef = useRef(null);
 
     async function fetchJoke(){
+        if (timerRef.current) {
+      clearTimeout(timerRef.current);
+      timerRef.current = null;
+    }
         try{
             const response = await fetch('https://official-joke-api.appspot.com/random_joke')
             const data = await response.json()
@@ -15,6 +20,7 @@ function JokeGenerator(){
             setPunchline(data.punchline);
             setTimeout(() => {
                 setShowPunchline(true); 
+                timerRef.current = null;
              }, 3000);
             
         }catch (error) {
@@ -23,7 +29,9 @@ function JokeGenerator(){
            }
              useEffect(() => {
             fetchJoke();
-          }, []);
+            return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+          }}, []);
     
 
     return(
