@@ -183,4 +183,23 @@ button:hover{
       position:fixed;
       
 
+      
+    }
+    .jokeGenerator{
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .jokeContent{
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 10px;
+    }
+    .jokePunchline{
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
     }

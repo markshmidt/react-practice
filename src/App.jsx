@@ -10,6 +10,7 @@ import CharacterCount from './CharacterCount'
 import Modal from './Modal'
 import ScrollButton from './ScrollButton'
 import GitHubUserFetch from './GitHubUserFetch'
+import JokeGenerator from './JokeGenerator'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <CharacterCount/>
       <Modal/>
       <GitHubUserFetch/>
+      <JokeGenerator/>
       </>
     
   )
