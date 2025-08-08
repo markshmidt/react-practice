@@ -1,6 +1,6 @@
 # React Practice
 
-A collection of beginner to intermediate React components I built to practice `useState`, `useEffect`, `useRef`, and `useContext`. This playground app includes interactive and reusable UI elements commonly used in real-world projects.
+A collection of beginner to intermediate React components I built to practice `useState`, `useEffect`, `useRef`, and `useContext`. This playground app includes interactive and reusable UI elements commonly used in real-world projects and deployed using GitHub Pages here: [React Playground](https://markshmidt.github.io/react-practice)
 
 ## Features
 
