@@ -13,15 +13,16 @@ function JokeGenerator(){
       timerRef.current = null;
     }
         try{
-            const response = await fetch('https://official-joke-api.appspot.com/random_joke')
-            const data = await response.json()
+            const response = await fetch('https://official-joke-api.appspot.com/jokes/programming/random')
+            const [data]= await response.json()
             console.log(data)
+            setShowPunchline(false)
             setJoke(data.setup)
             setPunchline(data.punchline);
-            setTimeout(() => {
-                setShowPunchline(true); 
+            timerRef.current = setTimeout(() => {
+                setShowPunchline(true);
                 timerRef.current = null;
-             }, 3000);
+            }, 3000);
             
         }catch (error) {
             console.error("Error fetching quote:", error);
