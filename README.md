@@ -24,7 +24,7 @@ A collection of beginner to intermediate React components I built to practice `u
 - Uses `useState`,`useRef`,  and `useEffect` for timing logic
 
 ### 💬 Random Quote Fetcher
-- Fetches a new random quote from [Quotable API](https://api.quotable.io)
+- Asynchronously fetches a new random quote from [Quotable API](https://dummyjson.com/quotes/random)
 - Button click triggers API call
 - Uses `useEffect`, `useState`, and fetch API
 
