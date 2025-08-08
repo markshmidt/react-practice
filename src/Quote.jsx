@@ -5,13 +5,13 @@ function Quote() {
 
    async function fetchQuote(){
     try {
-    const response = await fetch('https://api.quotable.io/random?limit=1');
+    const response = await fetch('https://dummyjson.com/quotes/random');
     const data = await response.json();
 
     console.log(data);
-    setQuote(data.content);
+    setQuote(data.quote);
     setAuthor(data.author);
-    console.log("Quote fetched:", data.content, "by", data.author);
+    console.log("Quote fetched:", data.quote, "by", data.author);
   } catch (error) {
     console.error("Error fetching quote:", error);
   }
