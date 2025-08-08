@@ -3,16 +3,18 @@ function Quote() {
     const [quote, setQuote] = useState('');
     const [author, setAuthor] = useState('');
 
-   const fetchQuote= ()=>{
-    fetch('https://api.quotable.io/random?limit=1')
-    .then(response=> response.json())
-    .then(data =>{
-        console.log(data)
+   async function fetchQuote(){
+    try {
+    const response = await fetch('https://api.quotable.io/random?limit=1');
+    const data = await response.json();
 
-      setQuote(data.content);
-      setAuthor(data.author);
-        console.log("Quote fetched:", data.content, "by", data.author);
-    })
+    console.log(data);
+    setQuote(data.content);
+    setAuthor(data.author);
+    console.log("Quote fetched:", data.content, "by", data.author);
+  } catch (error) {
+    console.error("Error fetching quote:", error);
+  }
    }
      useEffect(() => {
     fetchQuote();
